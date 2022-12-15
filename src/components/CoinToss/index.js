@@ -10,13 +10,13 @@ class CoinToss extends Component {
   }
 
   onToss = () => {
-    const Toss = Math.ceil(Math.random() * 10)
-    if (Toss > 5) {
+    const Toss = Math.ceil(Math.random() * 2)
+    if (Toss > 1) {
       this.setState(prevState => ({
         Heads: prevState.Heads + 1,
         image: 'https://assets.ccbp.in/frontend/react-js/heads-img.png',
       }))
-    } else if (Toss <= 5) {
+    } else if (Toss <= 1) {
       this.setState(prevState => ({
         Tails: prevState.Tails + 1,
         image: 'https://assets.ccbp.in/frontend/react-js/tails-img.png',
